@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Great Learning</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="dark-mode">
+    <header>
+      <h1>Student Registration!</h1>
+      <button class="light-theme">Mode</button>
+    </header>
+    <div id="main">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name"/>
+      <p id="nameError"></p>
+      <br />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter Your Email"/>
+      <p id="emailError"></p>
+      <br />
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Enter Your Age"/>
+      <p id="ageError"></p>
+      <br />
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Your password"/>
+      <button type="button" id="togglePassword">Show Password</button>
+      <p id="passwordError"></p>
+      <br />
+      <label for="confirmpassword">Confirm Password</label>
+      <input type="password" id="confirmpassword" placeholder="Confirm password"/>
+      <button type="button" id="toggleConfirmPassword">Show Password</button>
+      <p id="confirmpasswordError"></p>
+      <br />
+      <label for="course">Course Selection</label>
+      <select name="course" id="course">
+        <option value="">Select a Course</option>
+        <option value="web-development">web-development</option>
+        <option value="software-development">software-development</option>
+        <option value="graphic-designing">graphic-designing</option>
+        <option value="ui-ux">ui/ux design</option>
+        <option value="digital-marketing">digital-marketing</option>
+        <option value="seo">SEO</option>
+        <option value="microsoft-offices">microsoft-offices</option>
+      </select>
+      <p id="courseError"></p>
+      <button id="Registration">Submit</button>
+      <p id="successMessage"></p>
+    </div>
+    <section id="studentsSection">
+
+  <h2>Registered Students</h2>
+
+  <p>Total Students: <span id="studentCount">0</span></p>
+
+  <div id="studentList">
+    <!-- Students will be added here using JavaScript -->
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+  </body>
+</html>
